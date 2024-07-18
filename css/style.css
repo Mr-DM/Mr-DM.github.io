@@ -4,6 +4,11 @@ body>*{
     background-color: aliceblue;
 }
 
+.title{
+    position: sticky;
+    top:0;
+    left:0;
+}
 
 .header_panel{
     width: 100%;
@@ -20,10 +25,6 @@ body>*{
     top: 13px;
     left: 21px;
     display: inline-block;
-    
-    
-    
-
 }
 .properties{
     display: inline-block;
@@ -41,6 +42,38 @@ body>*{
     border-radius: 6px ;
     
 }
+.properties>a:hover{
+    animation-name: properties_buttom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes properties_buttom{
+    0%{
+        background-color: #FFAD00;
+        
+    }
+    100%{
+        background-color: red;
+        
+    }
+}
+@keyframes hover_photo{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: skewY(2);
+    }
+}
+.hover_photo{
+    animation-name: hover_photo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
 .pustota{
     width:60%;
     display: inline-block;
