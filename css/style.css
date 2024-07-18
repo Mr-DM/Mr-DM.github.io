@@ -67,7 +67,7 @@ body>*{
         transform: skewY(2);
     }
 }
-.hover_photo{
+.hover_photo:hover{
     animation-name: hover_photo;
     animation-duration: 2s;
     animation-iteration-count: 1;
